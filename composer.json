@@ -1,0 +1,9 @@
+{
+    "name": "fleapack/shiba/doge",
+    "description" : "Fleapack Shiba Doge, much wow.",
+	"autoload": {
+		"psr-0": {
+			"Fleapack\\Shiba\\Doge": "Classes"
+		}
+	}
+}
