@@ -1,6 +1,11 @@
 var DSON = require('dson-djs');
 
-var suchArguments = process.argv.slice(2);
-var wowArgument = suchArguments.join(' ');
+var readline = require('readline');
+var rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
 
-console.log(DSON.parse(wowArgument));
+rl.on('line', function(line){
+	console.log(DSON.parse(line));
+});

@@ -34,7 +34,7 @@ class NodeWow {
 			$argument = json_encode($argument);
 		}
 
-		return rtrim(shell_exec('/usr/local/bin/node ' . $soCommand . ' ' . addslashes($argument)), "\r\n");
+		return rtrim(shell_exec('/usr/local/bin/node ' . $soCommand . ' <<< "' . addslashes($argument) . '"'), "\r\n");
 	}
 
 }

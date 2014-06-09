@@ -14,8 +14,9 @@ class ShibeWow extends JsonView {
 	protected $nodeWow;
 
 	public function render() {
-		$json = parent::render();
-		return $this->nodeWow->suchExec('so_dogeify', json_decode($json, TRUE));
+		$propertiesToRender = $this->renderArray();
+		//$this->controllerContext->getResponse()->setHeader('Content-Type', 'text/dson');
+		return $this->nodeWow->suchExec('so_dogeify', $propertiesToRender);
 	}
 
 
