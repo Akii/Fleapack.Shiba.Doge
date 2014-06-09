@@ -1,5 +1,6 @@
 {
 	"name": "fleapack/shiba-doge",
+	"type": "typo3-flow-package",
 	"description" : "Fleapack Shiba Doge, much wow.",
 	"keywords": ["TYPO3", "Flow", "DOGE", "DSON", "JSON", "IPSUM", "Joke"],
 	"license": ["GPL"],
