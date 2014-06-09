@@ -9,6 +9,9 @@
 			"Fleapack\\Shiba\\Doge": "Classes"
 		}
 	},
+	"require": {
+		"typo3/flow": "*"
+	},
 	"suggest": {
 		"zegl/dson-php": "For DSON encode/decode with PHP instead of node.js"
 	}
