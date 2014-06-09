@@ -1,1 +1,5 @@
 Needs node.js with dogescript and dson-djs installed.
+Now you might be wondering why, since there is already a php parser for DSON.
+And the answer is: just because. Deal with it :)
+
+As of now, only the MuchIpsumViewHelper depends on node.js.
