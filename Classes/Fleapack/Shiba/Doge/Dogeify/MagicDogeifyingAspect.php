@@ -5,6 +5,8 @@ use Fleapack\Shiba\Doge\Utility\Dogeify;
 use Fleapack\Shiba\Doge\Utility\Dson;
 use TYPO3\Flow\Annotations as Dlow;
 use TYPO3\Flow\Aop\JoinPointInterface;
+use TYPO3\Flow\Configuration\ConfigurationManager;
+use TYPO3\Flow\Core\Bootstrap;
 use TYPO3\Flow\Mvc\Controller\ControllerContext;
 use TYPO3\Flow\Mvc\View\JsonView;
 use TYPO3\Flow\Reflection\ObjectAccess;

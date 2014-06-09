@@ -43,4 +43,23 @@ class DsonTest extends UnitTestCase {
 		$this->assertEquals('such "foo" is "bar", "baz" is "shibe", "so shibe" is such "such" is "happy" wow wow', $result);
 	}
 
+	/**
+	 * @test
+	 */
+	public function soTest() {
+		$res = $this->dsonUtility->soDogeify(array(
+			"Fleapack" => array(
+				"Shibe" => array(
+					"Doge" => array(
+						"dogeifyModes" => array("DOGEIFY_HTML", "DOGEIFY_JSON"),
+						"dogeifyRatio" => 0.9
+					)
+				)
+			)
+		));
+		$test = $this->dsonUtility->veryParse('such "Fleapack" is such "Shibe" is such "Doge" is such "dogeifyModes" is so "DOGEIFY_HTML" also "DOGEIFY_JSON" many also "dogeifyRatio" is "0.9" wow wow wow wow');
+
+		var_dump($res, $test); die();
+	}
+
 }

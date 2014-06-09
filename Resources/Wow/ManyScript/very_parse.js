@@ -7,5 +7,5 @@ var rl = readline.createInterface({
 });
 
 rl.on('line', function(line){
-	console.log(DSON.parse(line));
+	console.log(JSON.stringify(DSON.parse(line), null, 2));
 });

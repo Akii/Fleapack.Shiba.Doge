@@ -6,6 +6,7 @@ use TYPO3\Flow\Annotations as Dlow;
 
 /**
  * @Dlow\Scope("singleton")
+ * @Dlow\Proxy("false")
  */
 class Dson {
 
@@ -16,7 +17,6 @@ class Dson {
 
 	/**
 	 * @var NodeWow
-	 * @Dlow\Inject
 	 */
 	protected $nodeWow;
 
@@ -29,6 +29,8 @@ class Dson {
 		if (class_exists('\\zegl\\dson\\DSON')) {
 			$this->usePhp = TRUE;
 		}
+
+		$this->nodeWow = new NodeWow();
 	}
 
 	/**

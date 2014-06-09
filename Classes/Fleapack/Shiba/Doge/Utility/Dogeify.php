@@ -24,7 +24,7 @@ class Dogeify {
 	);
 
 	public function initializeObject() {
-		$this->dogeify = 1000 - (1000 * $this->dogeifyRatio);
+		$this->dogeify = 1000 - (1000 * (float) $this->dogeifyRatio);
 	}
 
 	/**

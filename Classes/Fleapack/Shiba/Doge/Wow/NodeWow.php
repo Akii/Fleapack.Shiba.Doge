@@ -34,6 +34,8 @@ class NodeWow {
 			$argument = json_encode($argument);
 		}
 
+		$argument = str_replace("\n", ' ', $argument);
+
 		if ($argument !== NULL) {
 			return rtrim(shell_exec('node ' . $soCommand . ' <<< "' . addslashes($argument) . '"'), "\r\n");
 		} else {
