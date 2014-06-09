@@ -1,6 +1,8 @@
 {
 	"name": "fleapack/shiba-doge",
 	"description" : "Fleapack Shiba Doge, much wow.",
+	"keywords": ["TYPO3", "Flow", "DOGE", "DSON", "JSON", "IPSUM", "Joke"],
+	"license": ["GPL"],
 	"autoload": {
 		"psr-0": {
 			"Fleapack\\Shiba\\Doge": "Classes"
