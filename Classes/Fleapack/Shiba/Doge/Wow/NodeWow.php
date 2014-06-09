@@ -19,7 +19,7 @@ class NodeWow {
 	 * @return wow
 	 * @todo no many argument, much disapoint
 	 */
-	public function suchExec($script, $argument) {
+	public function suchExec($script, $argument = NULL) {
 		$soCommand = FLOW_PATH_PACKAGES . self::WOW_SCRIPT_MUCH_AWESOME . $script . '.js';
 
 		if (!file_exists($soCommand)) {
@@ -34,7 +34,11 @@ class NodeWow {
 			$argument = json_encode($argument);
 		}
 
-		return rtrim(shell_exec('/usr/local/bin/node ' . $soCommand . ' <<< "' . addslashes($argument) . '"'), "\r\n");
+		if ($argument !== NULL) {
+			return rtrim(shell_exec('node ' . $soCommand . ' <<< "' . addslashes($argument) . '"'), "\r\n");
+		} else {
+			return rtrim(shell_exec('node ' . $soCommand), "\r\n");
+		}
 	}
 
 }
