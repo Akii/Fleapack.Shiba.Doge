@@ -57,7 +57,12 @@ function generateIpsum(qtd) {
 	return ipsum;
 }
 
-var suchArguments = process.argv.slice(2);
-var wowArgument = suchArguments[0];
+var readline = require('readline');
+var rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
 
-console.log(generateIpsum(wowArgument));
+rl.on('line', function(line){
+	console.log(generateIpsum(line));
+});

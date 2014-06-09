@@ -13,7 +13,9 @@ class MuchIpsumViewHelperTest extends UnitTestCase {
 	public function manyTestSoWow() {
 		$vh = new MuchIpsumViewHelper();
 		$this->inject($vh, 'suchObject', new NodeWow());
-		var_dump($vh->render(50));
+		$result = $vh->render(50);
+
+		$this->assertNotEmpty($result);
 	}
 
 }
