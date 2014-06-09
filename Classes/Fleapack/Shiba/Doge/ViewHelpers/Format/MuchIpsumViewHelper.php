@@ -7,8 +7,6 @@ use TYPO3\Flow\Annotations as Dlow;
 
 class MuchIpsumViewHelper extends AbstractViewHelper {
 
-	const WOW_SCRIPT_MUCH_AWESOME = 'Application/Fleapack.Shiba.Doge/Resources/Wow/ManyScript/much_ipsum.js';
-
 	/**
 	 * @var NodeWow
 	 * @Dlow\Inject
@@ -20,8 +18,7 @@ class MuchIpsumViewHelper extends AbstractViewHelper {
 	 * @return \Fleapack\Shiba\Doge\Wow\wow
 	 */
 	public function render($wows = 50) {
-		$soCommand = FLOW_PATH_PACKAGES . self::WOW_SCRIPT_MUCH_AWESOME . ' ' . $wows;
-		return $this->suchObject->suchExec($soCommand);
+		return $this->suchObject->suchExec('much_ipsum', 50);
 	}
 
 }
