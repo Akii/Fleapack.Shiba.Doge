@@ -58,3 +58,7 @@ This demonstrates the MuchIpsumViewHelper:
 ```
 http://wow.local/Fleapack.Shiba.Doge/Test/Show
 ```
+
+## Configuring Packages with DSON
+
+Yes, that's a thing now. Just add your configuration file as you normally would with the right file extension and contents. Note: DSON files will have precedence over YAML configurations.
