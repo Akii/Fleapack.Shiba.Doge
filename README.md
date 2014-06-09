@@ -61,4 +61,4 @@ http://wow.local/Fleapack.Shiba.Doge/Test/Show
 
 ## Configuring Packages with DSON
 
-Yes, that's a thing now. Just add your configuration file as you normally would with the right file extension and contents. Note: DSON files will have precedence over YAML configurations.
+Yes, that's a thing now. Just add your configuration file as you normally would with the right file extension and contents. Note: DSON files will have precedence over YAML configurations. Shiba highly recommends installing the `zegl/dson-php` package though, other methods have such bugs, result so bad configuration. Wow.
