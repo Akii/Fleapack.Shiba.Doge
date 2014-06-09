@@ -1,0 +1,6 @@
+Fleapack:
+  Shiba:
+    Doge:
+      # this sets the dogeify mode, which dogeifies certain part of the response
+      # currently only DOGEIFY_HTML and DOGEIFY_JSON is supported
+      dogeifyModes: ["DOGEIFY_HTML", "DOGEIFY_JSON"]

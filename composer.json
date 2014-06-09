@@ -6,7 +6,7 @@
 			"Fleapack\\Shiba\\Doge": "Classes"
 		}
 	},
-	"require": {
-		"zegl/dson-php": "dev-master"
+	"suggest": {
+		"zegl/dson-php": "For DSON encode/decode with PHP instead of node.js"
 	}
 }

@@ -2,10 +2,10 @@
 namespace Fleapack\Shiba\Doge\Utility;
 
 use Fleapack\Shiba\Doge\Wow\NodeWow;
-use TYPO3\Flow\Annotations as Flow;
+use TYPO3\Flow\Annotations as Dlow;
 
 /**
- * @Flow\Scope("singleton")
+ * @Dlow\Scope("singleton")
  */
 class Dson {
 
@@ -16,7 +16,7 @@ class Dson {
 
 	/**
 	 * @var NodeWow
-	 * @Flow\Inject
+	 * @Dlow\Inject
 	 */
 	protected $nodeWow;
 
